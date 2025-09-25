@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:quiz_mobile_app/screens/settings_screen.dart';
 import '../models/onboarding_model.dart';
 
 
@@ -36,8 +37,7 @@ class OnBoardingScreen extends StatelessWidget {
                 Align(
                   alignment: Alignment.topRight,
                   child: TextButton(
-                    onPressed: (){},
-                   // onPressed: () => Get.off(() => SettingsScreen()),
+                   onPressed: () => Get.off(() => SettingsScreen()),
                     child: const Text(
                       'Skip',
                       style: TextStyle(
@@ -213,7 +213,7 @@ class OnBoardingScreen extends StatelessWidget {
                           child: ElevatedButton(
                             onPressed: () {
                               if (isLastPage) {
-                                // Get.off(() => SettingsScreen());
+                                Get.off(() => SettingsScreen());
                               } else {
                                 pageController.nextPage(
                                   duration: const Duration(milliseconds: 300),
