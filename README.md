@@ -73,6 +73,7 @@ A modern and interactive Quiz application built with Flutter and GetX. Test your
 
 ## 📁 Project Structure
 
+```plaintext
 lib/
 ├── main.dart
 ├── models/
@@ -91,6 +92,7 @@ lib/
 ├── custom_dropdown.dart
 ├── answer_button.dart
 └── answer_listview.dart
+```
 
 ## 🎯 Features in Detail
 
